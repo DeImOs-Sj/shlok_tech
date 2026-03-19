@@ -1,24 +1,36 @@
 import React from 'react';
-// components
 import Banner from './components/Banner';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import About from './components/About';
+import Experience from './components/Experience';
 import Services from './components/Services';
+import Skills from './components/Skills';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import ScrollProgress from './components/ScrollProgress';
+import GlobalParticles from './components/GlobalParticles';
 
 const App = () => {
   return (
-    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
-      <Header />
-      <Banner />
-      <Nav />
-      <About />
-      <Services />
-      <Work />
-      <Contact />
-      {/* <div className='h-[4000px]'></div> */}
+    // Outer wrapper: beige bg, no overflow-hidden so fixed particles show
+    <div className="bg-primary min-h-screen">
+      {/* Fixed elements */}
+      <ScrollProgress />
+      <GlobalParticles />
+
+      {/* Scrollable content above particles */}
+      <div className="relative z-10">
+        <Header />
+        <Banner />
+        <Nav />
+        <About />
+        <Experience />
+        <Services />
+        <Skills />
+        <Work />
+        <Contact />
+      </div>
     </div>
   );
 };

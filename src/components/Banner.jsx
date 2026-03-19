@@ -31,7 +31,7 @@ const AnimatedName = () => {
   );
 };
 
-export const Banner = () => {
+const Banner = () => {
   const { scrollY } = useScroll();
   const imgY = useTransform(scrollY, [0, 600], [0, -70]);
   const sceneOpacity = useTransform(scrollY, [0, 400], [1, 0]);

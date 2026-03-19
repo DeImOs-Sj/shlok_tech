@@ -41,7 +41,7 @@ const Services = () => {
         <div className="flex flex-col lg:flex-row">
 
           {/* Left col */}
-          <div
+          <motion.div
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             whileInView="show"
@@ -54,7 +54,7 @@ const Services = () => {
             <a href="https://github.com/DeImOs-Sj" target="_blank" rel="noreferrer">
               <button className="btn btn-sm">See my Projects</button>
             </a>
-          </div>
+          </motion.div>
 
           {/* Services list */}
           <motion.div

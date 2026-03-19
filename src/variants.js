@@ -39,19 +39,3 @@ export const letterAnim = {
     transition: { type: 'spring', stiffness: 120, damping: 16 },
   },
 };
-
-// Zoom in from scale
-export const zoomIn = (delay = 0, duration = 0.6) => ({
-  hidden: { scale: 0.85, opacity: 0 },
-  show: {
-    scale: 1,
-    opacity: 1,
-    transition: {
-      type: 'spring',
-      stiffness: 80,
-      damping: 14,
-      delay,
-      duration,
-    },
-  },
-});

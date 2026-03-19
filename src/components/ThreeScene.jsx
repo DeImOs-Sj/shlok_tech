@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 // Dark warm-brown wireframe shapes visible on beige background
 const FloatingShape = ({ position, speed, scale, color }) => {
